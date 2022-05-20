@@ -1,0 +1,36 @@
+  @font-face {
+    font-family: "titulo";
+    src: url("../fonts/titles.ttf");
+  }
+
+  @font-face {
+    font-family: "fuente";
+    src: url("../fonts/fuente.ttf");
+  }
+  
+  body{
+      background-color: pink;
+  }
+
+  h1{
+    color: rgb(229, 48, 150);
+    font-family:"titulo", 'Courier New', cursive;
+  }
+
+  #form{
+    font-family: "fuente", 'Lucinda Handwriting', serif;
+    font-weight: bolder;
+  }
+
+  div {
+    position: relative;
+    width: 500px;
+    height: 250px;
+    background-color: rgb(166, 231, 231);
+    justify-content: center;
+  }
+
+  #agregar{
+    font-family: "fuente", 'Lucinda Handwriting', serif;
+    border-color: rgb(229, 48, 150);
+  }
