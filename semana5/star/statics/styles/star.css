@@ -1,0 +1,26 @@
+body{
+    background-color: palevioletred;
+}
+
+#star{
+    background-color: rgb(150, 235, 240);
+    position: relative;
+    justify-items: flex;
+}
+
+.star{
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+    display: space-evenly;
+    margin: 4%;
+    padding: 8%;
+}
+
+/* .form{
+    justify-content: left;
+} */
+
+#title{
+    font-weight: bolder;
+}

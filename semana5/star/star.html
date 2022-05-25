@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star</title>
+    <link href="./statics/styles/star.css" rel="stylesheet">
+</head>
+<body >
+    <div class="star">
+
+        <header id="title">Dibujador de estrellas</header><br><br>
+        
+        <canvas id="star" width="500" height="500"></canvas><br><br>
+
+        <label for="picos">Número de picos:</label>
+        <input id="picos" type="number" name="numPicos" min="4" max="30" value="4"><br><br>
+
+        <label for="picudez">Picudo:</label>
+        <input id="picudez" type="range" name="volume" min="4" max="150" value="50"><br><br>
+
+        <label for="color">Color de la estrella:</label>
+        <input id="color" type="color" name="color" value="#ffffff"><br><br>
+
+        <label for="relleno">Rellenar estrella:</label>
+        <input id="relleno" type="checkbox" value="off">
+
+    </div>
+
+    <script src="./dynamics/js/star.js"></script>
+
+</body>
+</html>
