@@ -12,40 +12,40 @@ console.log(picudez.value);
 console.log(relleno.value);
 
 function rellenar(){
-    if(relleno.value == "off")
-            ctx.stroke(); 
-            
-    else if(relleno.value == "on")
-            ctx.fill(); 
-}; 
+        if(relleno.value == "off")
+                ctx.stroke(); 
+                
+        else if(relleno.value == "on")
+                ctx.fill(); 
+};
 
 function star(){
 
-    var canvas = 500; 
-    var X = canvas/2; 
-    var Y = canvas/2; 
-    var radio_interno = (picos.value); 
-    var radio_externo = 250; 
-    var numPicos = (picos.value)*2; 
-    var grados = (Math.PI * 2) /numPicos; 
-    var angulo; 
-    var radio; 
-    var ejex, ejey; 
+        var canvas = 500; 
+        var X = canvas/2; 
+        var Y = canvas/2; 
+        var radio_interno = (picos.value); 
+        var radio_externo = 250; 
+        var numPicos = (picos.value)*2; 
+        var grados = (Math.PI * 2) /numPicos; 
+        var angulo;
+        var radio;  
+        var ejex, ejey; 
 
-    ctx.lineWidth = 4; 
-    ctx.strokeStyle = color.value;
-    ctx.fillStyle = color.value; 
-    
-    ctx.beginPath(); 
-
-    for(var i = 0; i< numPicos; i++)
+        ctx.lineWidth = 4; 
+        ctx.strokeStyle = color.value;
+        ctx.fillStyle = color.value; 
+        
+        ctx.beginPath(); 
+        
+        for(var i = 0; i< numPicos; i++)
         {
-                if(i%2==0)
+                if(i%2==0) //radio de la picudez 
                         radio = radio_interno; 
-                else 
+                else // radio de los vértices de la estrella
                         radio = radio_externo; 
 
-                angulo = i * grados;
+                angulo = i * grados; //ángulos para rotar
                 ejex = radio * Math.cos(angulo) + X; 
                 ejey = radio * Math.sin(angulo) + Y; 
                 ctx.lineTo(ejex, ejey); 
@@ -62,7 +62,7 @@ color.addEventListener("change", (evento)=>
         star(); 
 });
 
-picudez.addEventListener("change", (eventos) =>
+picos.addEventListener("change", (eventos) =>
 {
         if(picos.value>=4 && picos.value <= 30)
         {
@@ -70,10 +70,10 @@ picudez.addEventListener("change", (eventos) =>
                 star(); 
         }
         else 
-                alert("No se puede hacer una estrella con esos picos"); 
+                alert("No se puede hacer una estrella con esos picos("); 
 });
 
-picos.addEventListener("change", (eventos) =>
+picudez.addEventListener("change", (eventos) =>
 {
         canvas.width = 500; 
         star(); 
