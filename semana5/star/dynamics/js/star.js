@@ -70,7 +70,7 @@ picos.addEventListener("change", (eventos) =>
                 star(); 
         }
         else 
-                alert("No se puede hacer una estrella con esos picos("); 
+                alert("No se puede hacer una estrella con esos picos"); 
 });
 
 picudez.addEventListener("change", (eventos) =>
