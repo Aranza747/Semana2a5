@@ -1,0 +1,9 @@
+body{
+    background-color: palevioletred;
+}
+
+#star{
+    background-color: rgb(150, 235, 240);
+    position: relative;
+    justify-items: flex;
+}
