@@ -18,7 +18,7 @@ ul.addEventListener("click", (evento)=>{
 otra.addEventListener("click", (evento) =>{
     if(evento.target.otra == true){
         '<label class="materia">Escribe tu materia</label>'
-        '<input type="text"></input>'
+        '<input type="text"></input>       nm ;lm '
     }
 });
 
