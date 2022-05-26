@@ -1,0 +1,16 @@
+body{
+    /* background-color: pink; */
+    background-image: url("../img/pikachu.jpg");
+
+}
+
+#button{
+    border-color: rgb(174, 75, 177);
+    background-color: plum;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15%;
+    margin: 25%;
+    font-weight: bolder;
+}
